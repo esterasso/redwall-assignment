@@ -1,0 +1,592 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    /* White */
+
+
+    color: #0C0C0C;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    background: #EE1D4C;
+
+    /* button M */
+
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* White */
+
+    color: #FFFFFF;
+
+    border-radius: 4px;
+}
+
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(2.125rem, 2.05rem + 0.375vw, 2.5rem);
+    line-height: 50px;
+    /* or 125% */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 1.7rem + 0.25vw, 2rem);
+    line-height: 40px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: -0.01em;
+}
+
+h4 {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.body-xs {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+hr {
+    border-style: solid;
+    border-width: 3px;
+    width: 100%;
+    opacity: 1;
+}
+
+/*****************************
+HEADER
+ *****************************/
+
+.header-sisu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: white;
+    background-image: url("../assets/img/ringi-aripark1.jpg");
+    background-size: cover;
+    border-bottom-right-radius: 100px;
+    z-index: 1;
+}
+
+.header-gradient-bottom {
+    position: absolute;
+    width: 100vw;
+    height: 65vh;
+    left: 0;
+    bottom: 0;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(-180deg);
+    border-bottom-right-radius: 100px;
+    z-index: 2;
+}
+
+.header-gradient-top {
+    position: absolute;
+    width: 100vw;
+    height: 35vh;
+    left: 0;
+    top: 0;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.row {
+    z-index: 3;
+    position: relative;
+}
+
+.keelenupud {
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: relative;
+    width: 304px;
+    height: 40px;
+
+    /* CTA, error */
+
+    background: #EE1D4C;
+
+}
+
+.button-div {
+    z-index: 3;
+}
+
+.text-row {
+    z-index: 3;
+}
+
+/*****************************
+EELISED
+ *****************************/
+
+.eelised {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 102vh;
+
+    background: #C7DEEF;
+    padding-top: 95px;
+}
+
+
+/*****************************
+ASUKOHT PILDIGA
+ *****************************/
+
+.asukoht-pildiga {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 204vh;
+
+    background: url("../assets/img/ringi-aripark2.jpg");
+    background-size: cover;
+
+    color: white;
+    z-index: 1;
+}
+
+.gradient {
+    position: absolute;
+    height: 400px;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    background: linear-gradient(180deg, #ADCFE7 0%, rgba(173, 207, 231, 0) 100%);
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+
+.tekst {
+    z-index: 3;
+}
+
+/*****************************
+ASUKOHT KAARDIL
+ *****************************/
+
+.kaart {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 306vh;
+    background: #C7DEEF;
+
+
+    z-index: 1;
+}
+
+.kaardipilt {
+    background: url("../assets/maps/map-est.png");
+    background-size: cover;
+    top: 306vh;
+    height: 100vh;
+}
+
+.kaart table {
+    border-collapse: collapse;
+
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    background: white;
+
+
+}
+.kaart tr {
+    border: 1px solid;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.paks-border {
+    border-top: none;
+    border-bottom: 2px solid;
+}
+
+/*****************************
+DETAILINFO
+ *****************************/
+
+.detailinfo {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 408vh;
+
+    background: url("../assets/img/ringi-aripark3.jpg");
+    background-size: cover;
+
+    color: #0C0C0C;
+}
+
+.sisu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background: #FFFFFF;
+    opacity: 0.85;
+}
+
+.detailinfo table {
+    border-collapse: collapse;
+
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+
+}
+.detailinfo tr {
+    border: 1px solid;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.top-border {
+    border-top-width: 2px;
+}
+
+.bottom-border {
+    border-bottom-width: 2px;
+}
+
+/*****************************
+JALUS
+ *****************************/
+
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 510vh;
+
+    background: url("../assets/img/ringi-aripark1.jpg");
+    background-size: cover;
+
+    color: white;
+}
+
+.kontakt {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background: #0C0C0C;
+    opacity: 0.85;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    gap: 12px;
+    /*width: 424px;
+*/
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+input {
+    background: black;
+    border: 1px solid white;
+    width: 100%;
+
+}
+
+#kysimused {
+    background: black;
+    border: 1px solid white;
+    width: 100%;
+
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.logo-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:767px){
+    body,
+    header .container-fluid.justify-content-center.header-sisu,
+    .container-fluid.header-gradient-bottom,
+    .container-fluid.eelised,
+    .container-fluid.asukoht-pildiga,
+    .container-fluid.kaart,
+    .container-fluid.detailinfo,
+    footer{
+        width: 100%;
+    }
+
+    .row {
+        width: calc(100% + 1.5rem);
+    }
+    .header-gradient-top{
+        padding-top: 20px !important;
+        padding-left: 15px !important;
+        padding-right: 15px!important;
+    }
+    .header-gradient-bottom{
+        border-top-left-radius: 100px;
+    }
+    a.down-arrow {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+
+    a.down-arrow svg path {
+        stroke: #000000;
+        stroke-width: 2px;
+    }
+    .header-sisu{
+        height:99vh;
+    }
+}
+
+
+/*************************************/
+/************ MOBILE VIEW ************/
+/*************************************/
+@media only screen and (max-width:768px){
+
+    /* adding padding around all sections */
+    body {
+        padding: 10px;
+        height: auto;
+    }
+
+    .header-sisu,
+    .header-gradient-top,
+    .header-gradient-bottom,
+    .eelised,
+    .container-fluid.asukoht-pildiga,
+    .container-fluid.kaart,
+    .container-fluid.detailinfo,
+    footer{
+        width: calc(100vw - 20px);
+    }
+
+
+
+    .header-sisu,
+    .eelised,
+    .asukoht-pildiga,
+    .kaart,
+    .detailinfo,
+    footer{
+        position: relative;
+        top: unset;
+    }
+    .eelised,
+    .asukoht-pildiga,
+    .kaart,
+    .detailinfo,
+    footer{
+        margin-top: 10px;
+    }
+
+    .header-sisu {
+        border-bottom-right-radius: 0px;
+        z-index:10;
+    }
+
+
+    .header-gradient-top {
+        align-items: baseline;
+    }
+    .header-gradient-bottom{
+        border-bottom-right-radius: 0px;
+    }
+    .keelenupud {
+        font-size: clamp(15px,3vw,20px);
+        padding: 0px;
+    }
+    .keelenupud:last-child{
+        margin-left: 10px;
+    }
+    .button-div {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .button-div button {
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .eelised{
+        overflow-x: hidden;
+        height: auto;
+        padding: 70px 35px;
+    }
+
+    .eelised ul {
+        padding-left: 15px;
+    }
+
+    .eelised ul li {
+        margin-top: 12px;
+        max-width: 240px;
+    }
+
+    .asukoht-pildiga{
+        background-position: 52%;
+    }
+    .tekst h2 {
+        max-width: 260px;
+    }
+
+    .kaart {
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    .valge-taust {
+        padding: 15px 10px;
+        background: white;
+        width: 100%;
+    }
+
+    .valge-taust:last-child {
+        margin-top: 15px;
+    }
+
+    .kaart table {
+        width: 100%;
+        border-top: 0px;
+    }
+
+    .kaart table tr:first-child {
+        border-top: 0px;
+    }
+    .kaardipilt{
+        background-image: unset;
+        height: auto;
+    }
+    .kaardipilt+div > p{
+        max-width: 260px;
+    }
+
+    hr{
+        margin-bottom: 0.3em;
+    }
+
+    .detailinfo {
+        height: auto;
+        padding: 0px;
+        background-image: unset;
+    }
+    .container-fluid.detailinfo > .min-vh-100 {
+        min-height: auto !important;
+    }
+
+    .detailinfo .sisu {
+        position: static;
+    }
+
+    .detailinfo .sisu button,
+    footer form button {
+        width: 100%;
+        border: none;
+        padding: 10px 0px;
+        border-radius: 0px;
+    }
+    footer{
+        height: auto;
+    }
+    footer .container-fluid {
+        padding: 0px;
+    }
+
+    footer .kontakt {
+        position: static;
+        padding-bottom: 5rem!important;
+    }
+    footer .container-fluid > div {
+        min-height: auto !important;
+    }
+    .logo-footer {
+        display: none;
+    }
+}
+
+
+
+
+
+/************************************/
+
+
